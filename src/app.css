@@ -216,19 +216,37 @@ em {
   font-style: italic;
 }
 
-/* Image centering fix */
-:global(.article-chart) {
-  width: auto;
-  max-width: 95vw;
+
+:global(.article-image) {
+  width: 100%;
+  max-width: 1060px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.article-image img) {
+  width: 100%;
   height: auto;
   display: block;
-  margin: 1.5rem auto;
-  
-  /* Break out and center on page */
+}
+
+
+:global(.article-image.breakout) {
+  width: 100vw;
+  max-width: none;
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -47.5vw;
-  margin-right: -47.5vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  justify-content: center;
 }
 
+:global(.article-image.breakout img) {
+  width: auto;
+  max-width: 95vw;
+  height: auto;
+}

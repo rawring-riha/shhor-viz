@@ -171,7 +171,7 @@
 <p>Among comments with some form of intersection, <span class="stat-highlight"><strong>85% had at least two categories of hate intersecting</strong></span>, and <span class="stat-highlight"><strong>approximately 15% had three or more intersections</strong></span>—which is not a small number by any margin. These numbers demonstrate that the vast majority of online hate speech doesn't target a single identity but attacks multiple aspects of a person's being simultaneously.</p>
 
     <figure class="article-image">
-      <img src="/assets/donut.png" alt="Donut Chart: The Entanglement of Hate" />
+      <img src="./assets/donut.png" alt="Donut Chart: The Entanglement of Hate" />
     </figure>
 
 <p>The chord chart reveals how interconnected online hate speech is across different forms of marginalization. Each arc represents a category of hate, and the ribbons between them show how frequently they co-occur in the same comments. The thickness of each ribbon corresponds to the frequency of that particular intersection.</p>
@@ -184,13 +184,13 @@
 <p>Though the full chart contains numerous elements that make it challenging to read in a data story or dashboard, the dots reveal a clear pattern. <strong>The majority of the most frequent intersections appear in the top 10 combinations</strong>, and all except one—<em>political-communal-sexist</em>, the highest three-category intersection—contain only two-category combinations. Still, you can see that there are countless other intersection types beyond these dominant patterns.</p>
 
 <figure class="article-image">
-      <img src="/assets/upset.png" alt="Intersection Complexity Increases with Multiple Categories" />
+      <img src="./assets/upset.png" alt="Intersection Complexity Increases with Multiple Categories" />
     </figure>
 
 <p>The bar chart adjacent to the UpSet plot shows that <u>the number of unique intersection types is higher among comments with three or more intersections</u>. While comments with two intersections form a limited set of predictable patterns, those attacking three or more identities generate exponentially more combinations. This demonstrates that as hate becomes more virulent and targets more identities, it also becomes more varied and unpredictable in how it manifests.</p>
 
 <figure class="article-image">
-      <img src="/assets/heatmap.png" alt="Category Association Strength (Phi Coefficient)" />
+      <img src="./assets/heatmap.png" alt="Category Association Strength (Phi Coefficient)" />
     </figure>
 
 <p>This heat map measures the statistical correlation between hate speech categories using the phi coefficient, which ranges from -1 to +1. Positive values (orange/red) indicate categories that frequently co-occur in the same comments, while negative values (blue) indicate categories that rarely appear together. Values near zero (light gray) suggest independence between categories.</p>
