@@ -199,7 +199,7 @@
 
 <h2>How the Numbers Were Built</h2>
 
-<p>Shhor constructed its dataset from <strong>45,000 comments</strong> scraped from Indian social media between <strong>October 2022 and April 2024</strong>. The focus: public comments shaping culture and normalizing violence. Multiple platforms, multiple languages—primarily English and Hinglish—capturing everything from "dank" jokes to explicit threats.</p>
+<p>Shhor constructed its dataset from <strong>48,000 comments</strong> scraped from Indian social media between <strong>October 2022 and April 2024</strong>. The focus: public comments shaping culture and normalizing violence. Multiple platforms, multiple languages—primarily English and Hinglish—capturing everything from "dank" jokes to explicit threats.</p>
 
 <p>They weaponized the abuse they and their fellow marginalized activists and artists were receiving. Through an Instagram post, they invited others to share links to their own posts where they were targeted. Aindriya created a scraper to automatically collect these hate comments.</p>
 
@@ -224,7 +224,7 @@
 
 <p>Aindriya faced the daunting task of manually reading and marking thousands of ugly comments as hate or not, and further categorizing them. The task was enormous. But so was Aindriya's determination. They knew they couldn't tag thousands of comments themself, so Aindriya reached out to their allies on Instagram.</p>
 
-<p>Soon, support started pouring in. They mobilized and created a community of about <strong>45 volunteers</strong> from downtrodden backgrounds with lived experiences to understand the hate. <em>I am one of them too.</em> We all marched ahead, following Aindriya's guidelines, with a shared dream: 🌻 <strong>A SAFER INTERNET FOR ALL</strong> 🌻</p>
+<p>Soon, support started pouring in. They mobilized and created a community of about <strong>45 volunteers</strong> from downtrodden backgrounds with lived experiences to understand the hate. <em>I am one of them too.</em> We all marched ahead, following Aindriya's guidelines, with a shared dream: <strong>A SAFER INTERNET FOR ALL</strong> </p>
 
 <div class="callout-box">
 <p><strong>Who annotates determines what gets labeled.</strong> Upper-caste annotators miss casteist microaggressions. Men often don't recognize subtle misogyny. Annotators—many holding marginalized identities themselves—were trained to recognize hate in covert and overt forms.</p>
@@ -241,7 +241,7 @@
     <li>Mockery and dismissal of marginalized identities</li>
 </ul>
 
-<p>Till now, they have accumulated <strong>India's most extensive Hinglish real-world dataset of 45,000+ comments</strong> and used it in first-of-its-kind research. Using the data, they trained a high-end AI model. Aindriya's groundbreaking work won them acclaim from around the world.</p>
+<p>Till now, they have accumulated <strong>India's most extensive Hinglish real-world dataset of 48,000+ comments</strong> and used it in first-of-its-kind research. Using the data, they trained a high-end AI model. Aindriya's groundbreaking work won them acclaim from around the world.</p>
 
 <h2>The Calculations</h2>
 
@@ -252,15 +252,6 @@
     <li>Only comments tagged as hate and containing at least one intersection were considered; data with no intersections were excluded from this particular analysis</li>
 </ol>
 
-<h3>How the Percentages Were Calculated</h3>
-
-<p>The 85% and 15% figures represent the distribution of intersection complexity among hate comments:</p>
-
-<ul>
-    <li><strong>Total hate comments with intersections</strong>: The subset of the 45,000 comments that contained multiple hate categories</li>
-    <li><strong>Two-category intersections</strong>: Comments tagged with exactly two hate categories (e.g., sexist + communal hate)</li>
-    <li><strong>Three-or-more-category intersections</strong>: Comments tagged with three, four, or more hate categories</li>
-</ul>
 
 <p>The calculation:</p>
 
