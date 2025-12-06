@@ -20,7 +20,7 @@
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 22vh;          /* was 28vh */
+    height: 22vh;          
     background: white;
     color: black;
     display: flex;
@@ -29,16 +29,15 @@
     padding: 1.5rem 1rem;
     z-index: 30;
 
-    /* remove border/shadow */
     border-top: none;
     box-shadow: none;
   }
 
   .inner {
     max-width: 1100px;
-    line-height: 1.55;
+    line-height: 1.3;
     text-align: center;
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 </style>
 

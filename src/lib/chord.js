@@ -13,13 +13,13 @@ const CFG = {
 
 // Color palette 
 const colors = {
-  sexist: "#e52b50",
-  political: "#4285f4",
-  communal: "#fbbc04",
-  casteist: "#34a853",
-  racist: "#9c27b0",
-  queerphobic: "#ff9800",
-  ablelist: "#607d8b"
+  sexist: "#b07beaff",
+  political:"#f1e128ff",
+  communal: "#b8e27d",
+  casteist: "#4ae2cdff",
+  racist: "#f05574ff",
+  queerphobic: "#feb744ff",
+  ablelist: "#7c7acaff"
 };
 
 /* ---------- Module-level data holders for percentages ---------- */

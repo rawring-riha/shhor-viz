@@ -21,6 +21,25 @@ body {
   display: block; /* revert from flex */
 }
 
+:global(.article) {
+  position: relative;
+  overflow: visible; /* Allow images to overflow */
+}
+
+:global(.article .article-chart) {
+  width: auto;
+  max-width: 95vw;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  
+  /* Center relative to viewport, not article container */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -47.5vw;
+  margin-right: -47.5vw;
+}
 
 a {
   font-weight: 500;
@@ -90,5 +109,126 @@ button:focus-visible {
   color-scheme: light;
   background: white;
   color: black;
+}
+
+/* Add these to app.css - Content Styling */
+
+/* Headings */
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  line-height: 1.2;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 2.5em;
+  margin-bottom: 0.8em;
+  color: #000;
+  border-bottom: 3px solid #000;
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #2a2a2a;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #2a2a2a;
+}
+
+/* Text Elements */
+:global(.stat-highlight) {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #000;
+  background: #fff3cd;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+:global(.quote) {
+  border-left: 4px solid #ddd;
+  padding-left: 1.5em;
+  margin: 2em 0;
+  font-style: italic;
+  color: #333;
+  background: #f9f9f9;
+  padding: 1em 1.5em;
+  border-radius: 4px;
+}
+
+:global(.section-break) {
+  text-align: center;
+  margin: 3em 0;
+  color: #999;
+  font-size: 1.2em;
+  letter-spacing: 0.5em;
+}
+
+/* Lists */
+:global(.article) ul {
+  margin: 1.5em 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+:global(.article) ul li {
+  margin: 0.8em 0;
+  padding-left: 1.5em;
+  position: relative;
+}
+
+:global(.article) ul li:before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+:global(.article) ol {
+  margin: 1.5em 0;
+  padding-left: 1.5em;
+}
+
+:global(.article) ol li {
+  margin: 0.8em 0;
+}
+
+/* Strong and emphasis */
+strong {
+  font-weight: 600;
+  color: #dd4158;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Image centering fix */
+:global(.article-chart) {
+  width: auto;
+  max-width: 95vw;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  
+  /* Break out and center on page */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -47.5vw;
+  margin-right: -47.5vw;
 }
 
