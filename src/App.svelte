@@ -161,58 +161,72 @@
   <div class="chart-caption" class:fadein={step === "end"}>
     <div class="caption-inner">
       <h3>There Is No Single-Issue Oppression</h3>
-      <p>Kimberlé Crenshaw coined the term <em>intersectionality</em> in 1989: systems of oppression interlock, creating unique experiences for people living at those junctures. In India, where caste, religion, gender, class, and region weave dense hierarchies, <strong>intersectionality isn't academic theory. It's survival knowledge.</strong></p>
+      <p>By Harikrishnan P"</p>
+      <p>Kimberlé Crenshaw coined the term <em>intersectionality</em> in 1989: systems of oppression interlock, creating unique experiences for people living at those junctures. 
+        In India, where caste, religion, gender, class, and region layer over one another in complex patterns, intersectionality plays out in everyday experience. It’s a way of understanding how people navigate those tangled pressures.</p>
     </div>
   </div>
 
   <!-- ARTICLE: Starts immediately after scrolly -->
   <Article>
-    <!-- your existing article content -->
 
-<p>Dalit feminists built on Ambedkar's analysis of how caste persists through controlling and sexually exploiting women. Mainstream Indian feminism centered upper-caste concerns while sidelining how caste and religion shape violence. The Dalit movement often treated women's specific oppressions as secondary to caste struggle.</p>
+<p>Dalit feminists elaborated on Ambedkar's program by interrogating how caste endures through the policing and sexual exploitation of women.
+  Mainstream Indian feminism, in turn, was more invested in upper-caste concerns, bracketing the axes of caste and religion that determine the modalities of violence. 
+  The Dalit movement, on the other hand, often relegated women's experiences to the subsidiary position of anti-caste struggle.</p>
 
-<p>But Dalit women, Muslim women, trans folks, disabled people—those living at multiple intersections—understand their oppressions cannot be separated. <u>A Dalit woman's sexual assault is both casteist and sexist violence.</u> <u>A Muslim trans person attacked online faces queerphobia, Islamophobia, and misogyny simultaneously.</u></p>
+<p>In contrast, Dalit women, Muslim women, transgender individuals, and disabled people—anyone facing multiple oppressions—recognize the inseparability of these systems.
+<u>For instance, a Dalit woman who faces sexual assault-casteist and sexist at once.</u> 
+<u>A Muslim transgender person who is harassed online, confronts queerphobia, Islamophobia, and misogyny all at once.</u></p>
 
 <div class="callout-box">
-<p><strong>Shhor refuses to treat hate as singular.</strong> Every comment receives tags for <em>all</em> identities it attacks. Every analysis searches for intersection patterns. Pretending oppression is single-issue abandons those holding multiple marginalized identities—the people needing protection most. The data proves it. Lived experiences demand it. Liberation requires intersectionality.</p>
+<p><strong>Shhor does not treat hate as a isolated phenomenon.</strong> 
+Each comment is annotated for all identities it targets, and analyses seek patterns where multiple oppressions converge.  
+It is to abandon those with multiple marginalized identities—the very individuals most in need of protection—when one supposes that oppression manifests in a single form.  
+This position is corroborated both by the empirical data and by the lived experiences of people. Thus, intersectionality is needed for true liberation.
+</p>
 </div>
 
-<h2>Intersections Are the Norm, Not the Exception</h2>
+<h2>Most Hate Isn't Single-Issue</h2>
 
-<p>Among comments with some form of intersection, <span class="stat-highlight"><strong>85% had at least two categories of hate intersecting</strong></span>, and <span class="stat-highlight"><strong>approximately 15% had three or more intersections</strong></span>—which is not a small number by any margin. These numbers demonstrate that the vast majority of online hate speech doesn't target a single identity but attacks multiple aspects of a person's being simultaneously.</p>
+<p>Of those comments crossing identities, 
+<span class="stat-highlight"><strong>85% include at least two types of hate, and around 15% include three or more, which suggests that, in general, online hate speech often targets more than one aspect of a target's identity at a time.</strong></span>
+These numbers show that most online hate speech doesn't just go after one identity.
+ It attacks multiple parts of who someone is, all at the same time.</p>
 
     <figure class="article-image">
       <img src="./assets/donut.png" alt="Donut Chart: The Entanglement of Hate" />
     </figure>
 
-<p>The chord chart reveals how interconnected online hate speech is across different forms of marginalization. Each arc represents a category of hate, and the ribbons between them show how frequently they co-occur in the same comments. The thickness of each ribbon corresponds to the frequency of that particular intersection.</p>
+<p>The chord diagram below visualizes the relationships among different kinds of hate, where thicker ribbons indicate more frequent co-occurrences. This figure highlights how online hate is convoluted, interrelated, and often multi-identity in the targets.</p>
 
-<p><em>This visualization's goal is to show how all these forms of marginalization intersect and impact individuals.</em> Online hate is not as simple as some people make it out to be—it's messy, entangled, and targets multiple identities at once.</p>
+<p><em>This visualization's goal is to show how Online hate is not as simple as some people make it out to be—it's messy, entangled, and targets multiple identities at once.</em> 
+</p>
 
 
-<p>If you want more clarity and structure showing the largest intersections clearly, the UpSet plot displays them systematically. This chart type reads left-to-right: the bar chart on the left shows the frequency of each hate category, while the connected dots in the matrix show which categories co-occur, with the bar chart above indicating how many comments contain that specific combination.</p>
+<p>An UpSet plot provides a more formal delineation of the principal intersections. Reading left to right, the left-hand bar chart represents the prevalence of each hate category, the connected dots indicate co-occurring categories, and the top bar represents the frequency of each specific combination. Though the complete diagram is dense, the salient pattern is readily apparent: the most common intersections all sit within the top ten combinations, while all but one three-category intersection—political-communal-sexist—comprise no more than two categories, and there are numerous additional types of intersections beyond these core patterns.</p>
 
-<p>Though the full chart contains numerous elements that make it challenging to read in a data story or dashboard, the dots reveal a clear pattern. <strong>The majority of the most frequent intersections appear in the top 10 combinations</strong>, and all except one—<em>political-communal-sexist</em>, the highest three-category intersection—contain only two-category combinations. Still, you can see that there are countless other intersection types beyond these dominant patterns.</p>
+<p>The adjacent bar chart shows that comments with three or more intersections are far more diverse in terms of category combination. Two-category intersections correspond to more predictable patterns, while three-or-more-category attacks create significantly more variation, which suggests that the greater the multiplicity of targeted identities, the more both severity and unpredictability increase.
+</p>
 
 <figure class="article-image">
       <img src="./assets/upset.png" alt="Intersection Complexity Increases with Multiple Categories" />
     </figure>
 
-<p>The bar chart adjacent to the UpSet plot shows that <u>the number of unique intersection types is higher among comments with three or more intersections</u>. While comments with two intersections form a limited set of predictable patterns, those attacking three or more identities generate exponentially more combinations. This demonstrates that as hate becomes more virulent and targets more identities, it also becomes more varied and unpredictable in how it manifests.</p>
+<h3> Statistical Associations between Types of Hate </h3>
 
 <figure class="article-image">
       <img src="./assets/heatmap.png" alt="Category Association Strength (Phi Coefficient)" />
     </figure>
 
-<p>This heat map measures the statistical correlation between hate speech categories using the phi coefficient, which ranges from -1 to +1. Positive values (orange/red) indicate categories that frequently co-occur in the same comments, while negative values (blue) indicate categories that rarely appear together. Values near zero (light gray) suggest independence between categories.</p>
+<p>A heat map displays the associations between hate categories quantified by the phi coefficient, φ, which runs in the interval between -1 and +1. Positive values denote frequent co-occurrence in the same comments; negative values denote rare co-occurrence, and values near zero indicate relative independence.</p>
 
 <p>The heat map reveals critical patterns about how different forms of hate intersect—and when they don't. <strong>The strongest positive association appears between casteist and racist hate (φ = 0.216)</strong>, suggesting that comments attacking someone's caste often simultaneously deploy racial or xenophobic slurs, particularly against Adivasi communities. This reflects how caste hierarchies and racial discrimination are deeply intertwined in Indian contexts, where upper-caste supremacy often manifests through both casteist and racist language.</p>
 
-<h2>How the Numbers Were Built</h2>
+<h2>Constructing the Dataset</h2>
 
-<p>Shhor constructed its dataset from <strong>48,000 comments</strong> scraped from Indian social media between <strong>October 2022 and April 2024</strong>. The focus: public comments shaping culture and normalizing violence. Multiple platforms, multiple languages—primarily English and Hinglish—capturing everything from "dank" jokes to explicit threats.</p>
+<p>Shhor's dataset includes <strong>48,000 comments</strong> which were scraped from Indian social media between <strong>October 2022 and November 2025</strong>. The dataset focuses on public discourses that shape culture and normalize violence. The data span multiple platforms and the language in focus was Hinglish, capturing tones ranging from humorous derision to explicit threats.</p>
 
-<p>They weaponized the abuse they and their fellow marginalized activists and artists were receiving. Through an Instagram post, they invited others to share links to their own posts where they were targeted. Aindriya created a scraper to automatically collect these hate comments.</p>
+<p>The researchers reimagined, collected, and transformed abusive content targeting activists and artists into analyzable data. In an Instagram post, Aindriya Barua (Founder & CEO of ShhorAI) invited others to share links to the targeted posts, while they developed a scraper to automate the collection of hate comments.</p>
 
 <h3>The Categories</h3>
 
@@ -229,19 +243,21 @@
     <li><strong>General</strong> (harmful content outside other categories)</li>
 </ol>
 
-<p>Each comment received manual review and could carry multiple tags for intersecting hatreds. <em>A comment calling a Muslim woman politician a communal slur gets tagged as "communal hate," "political hate," and "sexist hate."</em></p>
+<p>As most comments contained the presence of more than one hatred, each comment could receive multiple labels. For instance, a comment using communal, political, and sexist slurs to refer to a Muslim woman politician would be labeled as containing communal hate, political hate, and sexist hate.</p>
 
-<h3>The Annotation Method</h3>
+<h3>Annotation Process</h3>
 
-<p>Aindriya faced the daunting task of manually reading and marking thousands of ugly comments as hate or not, and further categorizing them. The task was enormous. But so was Aindriya's determination. They knew they couldn't tag thousands of comments themself, so Aindriya reached out to their allies on Instagram.</p>
+<p>Aindriya faced difficulty manually screened thousands of comments to determine hate content and categorize them.</p>
 
-<p>Soon, support started pouring in. They mobilized and created a community of about <strong>45 volunteers</strong> from downtrodden backgrounds with lived experiences to understand the hate. <em>I am one of them too.</em> We all marched ahead, following Aindriya's guidelines, with a shared dream: <strong>A SAFER INTERNET FOR ALL</strong> </p>
+<p>To handle the workload, they recruited about <strong>45 volunteers</strong> from marginalised backgrounds with lived experience, forming a collaborative team guided by standardized procedures in pursuit of <strong>A SAFER INTERNET FOR ALL</strong> </p>
+
+<h3>Annotation Considerations</h3>
 
 <div class="callout-box">
-<p><strong>Who annotates determines what gets labeled.</strong> Upper-caste annotators miss casteist microaggressions. Men often don't recognize subtle misogyny. Annotators—many holding marginalized identities themselves—were trained to recognize hate in covert and overt forms.</p>
+<p><strong>Who annotates determines what gets labeled.</strong> Annotators' identities impact labeling: upper-caste evaluators may overlook casteist microaggressions, and male annotators may not notice subtle misogyny. Their annotation team consisted of individuals from marginalized backgrounds, trained to detect overt and implicit forms of hate.</p>
 </div>
 
-<p>Guidelines adapted existing hate speech research for Indian contexts, including:</p>
+<p>The guidelines adapted to the Indian contexts included :</p>
 
 <ul>
     <li>Explicit slurs and violent language</li>
@@ -252,19 +268,19 @@
     <li>Mockery and dismissal of marginalized identities</li>
 </ul>
 
-<p>Till now, they have accumulated <strong>India's most extensive Hinglish real-world dataset of 48,000+ comments</strong> and used it in first-of-its-kind research. Using the data, they trained a high-end AI model. Aindriya's groundbreaking work won them acclaim from around the world.</p>
+<p>Till now, Shhor has accumulated <strong>India's most extensive Hinglish real-world dataset of 48,000+ comments</strong> and used it in first-of-its-kind research. This dataset supported the training of an advanced AI model. Recognition of work at Aindriya was widespread.</p>
 
-<h2>The Calculations</h2>
+<h2>Math and Methodology</h2>
 
 <h3>Context</h3>
 
 <ol>
-    <li>For this analysis, the "general hate" category was removed to focus on specific identity-based hate</li>
-    <li>Only comments tagged as hate and containing at least one intersection were considered; data with no intersections were excluded from this particular analysis</li>
+    <li>The general hate category was omitted to focus on specific identity-based hate.</li>
+    <li>Only those comments labeled as hate and having at least one intersection were included; comments with no intersections were excluded from this analysis.</li>
 </ol>
 
 
-<p>The calculation:</p>
+<p>Calculation:</p>
 
 <p><strong>Percentage = (Number of comments with <em>n</em> categories / Total comments with any intersection) × 100</strong></p>
 
@@ -292,17 +308,17 @@
     <li><em>n₀₀</em> = comments containing neither category</li>
 </ul>
 
-<p>The heat map visualizes these phi coefficients across all category pairs, with color intensity representing association strength. <u>Darker/warmer colors indicate stronger associations—hate categories that frequently co-occur.</u> This reveals which forms of hate most often combine to create intersectional attacks.</p>
+<p>These φ values across all category pairs are visualized in the heat map, with color intensity showing the strength of association. Darker colors reflect stronger co-occurrence, hence showing which forms of hate most frequently combine in forming intersectional attacks.</p>
 
-<h2>Why This Data Exists</h2>
+<h2>Why This Data Exists: The Significance</h2>
 
-<p>Most hate speech research in India focuses on single categories—sexism <em>or</em> communal hate <em>or</em> casteism. Few studies track intersections. Fewer still are built by and for marginalized communities.</p>
+<p>Most of the studies done on hate speech in India have focused on single categories; there is even less research on the intersections of certain categories and the work done using datasets specifically created with and for the communities most affected. </p>
 
 <div class="callout-box">
 <p>As Aindriya, Shhor's founder, states: <em>"Shhor AI's dataset exists because the need was urgent. Big-tech platforms fail marginalized communities. The state criminalizes their speech while ignoring hate targeting them."</em></p>
 </div>
 
-<p><strong>This data is ammunition. Proof. Receipts</strong> for when someone claims, "It's not that bad," or "You're being too sensitive," or "Why make everything about identity?"</p>
+<p><strong>The data serve as empirical evidence both to counter reclamations that downplay the severity of online hate and to document the pervasiveness and measurable impact of violence online.</strong> </p>
 
 <p><u>The numbers say: The violence is real, measurable, and everywhere.</u></p>
 
