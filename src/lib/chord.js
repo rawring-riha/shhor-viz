@@ -499,7 +499,7 @@ function applyStepStyling(svg, labels, color, step, withTransition = false) {
       .transition().duration(duration)
       .style("fill", "#222");
 
-    // --- arc hover highlight: works in both full + end ---
+    
     arcPaths.on("mouseover", function (event, d) {
       ribbons
         .attr("fill-opacity", (r) =>
@@ -520,12 +520,12 @@ function applyStepStyling(svg, labels, color, step, withTransition = false) {
 
 
 
-/* ---------- Static tooltip drawing (large function kept) ---------- */
+/* ---------- Static tooltip drawing  ---------- */
 function drawStaticTooltips(svg, labels, color, step) {
   const tooltipLayer = svg.select(".static-tooltips");
   tooltipLayer.selectAll("*").remove();
 
-  // 1. select ribbons that are visually opaque enough
+  // select ribbons that are visually opaque enough
   const ribbons = svg
     .selectAll("g.chord-ribbons .chord-ribbon")
     .filter(function () {
@@ -537,7 +537,7 @@ function drawStaticTooltips(svg, labels, color, step) {
 
   if (!ribbons.length) return;
 
-  // 2. unique unordered pairs
+  // unique unordered pairs
   const seen = new Set();
   const pairs = [];
   ribbons.forEach((d) => {
@@ -550,7 +550,7 @@ function drawStaticTooltips(svg, labels, color, step) {
     }
   });
 
-  // 3. geometry
+  // geometry
   const outerRadius = Math.min(CFG.WIDTH, CFG.HEIGHT) / 2 - CFG.OUTER_PADDING;
 
   // measure label extents (best-effort)
@@ -571,7 +571,7 @@ function drawStaticTooltips(svg, labels, color, step) {
   const topSafe = -outerRadius - 60;
   const baseRadius = outerRadius + 90;
 
-  // 4. initial radial points
+  // initial radial points
   const points = pairs.map(([i, j, d]) => {
     const angle = (d.source.startAngle + d.source.endAngle) / 2;
     return {
@@ -585,7 +585,7 @@ function drawStaticTooltips(svg, labels, color, step) {
     };
   });
 
-  // 5. vertical collision resolve
+  // vertical collision resolve
   points.sort((a, b) => a.y - b.y);
   const minGap = 26;
   for (let k = 1; k < points.length; k++) {
@@ -594,7 +594,7 @@ function drawStaticTooltips(svg, labels, color, step) {
     }
   }
 
-  // 6. constrain top/bottom
+  // constrain top/bottom
   points.forEach((p) => {
     if (p.y > bottomSafe) p.y = bottomSafe;
     if (p.y < topSafe) p.y = topSafe;
@@ -612,7 +612,7 @@ function drawStaticTooltips(svg, labels, color, step) {
     }
   });
 
-  // 7. draw connectors & boxes
+  // draw connectors & boxes
   points.forEach((p) => {
     const { i, j } = p;
     const A = labels[i];

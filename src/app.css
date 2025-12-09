@@ -4,13 +4,13 @@
   font-family: "Fira Code", monospace !important;
   line-height: 1.5;
   
-  /* These stabilize tooltip box width/height */
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Do NOT add background or color here */
+  
 }
 
 /* Body reset — required for proper SVG scaling */
