@@ -14,6 +14,14 @@
     <p>The analysis excludes General hate—reserved for harmful content that doesn't intersect with the other seven categories.</p>
 
       `,
+
+      explainer: `
+  <h4>Reading the Chord Chart</h4>
+  <p><span style="display: inline-block; width: 60px; height: 20px; background: linear-gradient(to right, #b07bea, #f1e128); border-radius: 3px; vertical-align: middle; margin-right: 8px;"></span> <strong>Ribbons</strong> = connections showing how often two hate categories appear together</p>
+  <p><span style="display: inline-block; width: 20px; height: 20px; background: #b07bea; border-radius: 50%; vertical-align: middle; margin-right: 8px;"></span> <strong>Arcs</strong> = individual hate categories around the circle</p>
+  <p><strong>Thicker ribbons = more frequent intersections.</strong> Hover over any arc to highlight all its connections.</p>
+  <p>This chart reveals that online hate rarely targets just one identity—it's deeply interconnected.</p>
+`,
     sexist: `
       <h4>Gender Violence Never Travels Alone</h4>
 <p>When Shhor examined sexist comments closely, patterns emerged:<span class="stat-highlight">36.4%</span> also contain communal hatred, <span class="stat-highlight">20.0%</span> intersect with political targeting.</p>
@@ -36,7 +44,7 @@
   let scrollySection;
   let inScrolly = true; 
 
-  const orderedSteps = ["grayscale", "intro", "sexist", "political", "full", "end"];
+  const orderedSteps = ["grayscale", "intro", "explainer", "sexist", "political", "full", "end"];
   
   // --- SCROLL → STEP MAPPING ---
   onMount(() => {
@@ -56,19 +64,21 @@
         Math.min(1, -rect.top / (scrollyHeight - windowHeight))
       );
 
-      if (progress < 0.16) {
-        currentStep.set("grayscale");
-      } else if (progress < 0.33) {
-        currentStep.set("intro");
-      } else if (progress < 0.5) {
-        currentStep.set("sexist");
-      } else if (progress < 0.66) {
-        currentStep.set("political");
-      } else if (progress < 0.83) {
-        currentStep.set("full");
-      } else {
-        currentStep.set("end");
-      }
+      if (progress < 0.14) {        // ~1/7
+          currentStep.set("grayscale");
+        } else if (progress < 0.28) {  // ~2/7
+          currentStep.set("intro");
+        } else if (progress < 0.42) {  // ~3/7
+          currentStep.set("explainer");
+        } else if (progress < 0.57) {  // ~4/7
+          currentStep.set("sexist");
+        } else if (progress < 0.71) {  // ~5/7
+          currentStep.set("political");
+        } else if (progress < 0.85) {  // ~6/7
+          currentStep.set("full");
+        } else {
+          currentStep.set("end");
+        }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -121,6 +131,7 @@
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
   });
+
 </script>
 
 <div class="page-wrapper">
@@ -307,7 +318,7 @@
   .scrolly-section {
     position: relative;
     /* Fixed height: 6 steps × 100vh = 600vh of scroll distance */
-    height: 600vh;
+    height: 700vh;
     width: 100%;
   }
 

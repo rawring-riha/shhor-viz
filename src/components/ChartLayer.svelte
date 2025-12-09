@@ -103,7 +103,7 @@
 
   .hero-overlay {
     position: absolute;
-    top: 50%;
+    top: 57.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 50;
@@ -115,7 +115,7 @@
     padding: 1.5rem 2rem;
     border-radius: 10px;
     text-align: center;
-    max-width: 500px;
+    max-width: 700px;
   }
 
   .hero-box h1 {

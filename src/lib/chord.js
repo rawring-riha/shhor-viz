@@ -4,8 +4,8 @@ import * as d3 from "d3";
 import { SUPABASE_URL, SUPABASE_KEY, PRIVATE_BUCKET, PUBLIC_BUCKET } from "./supabaseConfig.js";
 
 const CFG = {
-  WIDTH: 700,
-  HEIGHT: 700,
+  WIDTH: 850,
+  HEIGHT: 850,
   OUTER_PADDING: 80,
   ARC_THICK: 30,
   TRANSITION_MS: 800
@@ -367,6 +367,36 @@ function applyStepStyling(svg, labels, color, step, withTransition = false) {
 
     return;
   }
+
+  if (step === "explainer") {
+  svg.select(".static-tooltips").selectAll("*").remove();
+  
+  ribbons.transition().duration(duration)
+    .attr("fill", (d) => `url(#grad-${safe(labels[d.source.index])}-${safe(labels[d.target.index])})`)
+    .attr("fill-opacity", 0.9)
+    .attr("pointer-events", "auto");
+
+  groups.selectAll("path").transition().duration(duration)
+    .attr("fill", (d) => color(labels[d.index]))
+    .attr("fill-opacity", 1);
+
+  groups.selectAll("text").transition().duration(duration)
+    .style("fill", "#222");
+
+  // Add arc hover interaction for demonstration
+  arcPaths.on("mouseover", function (event, d) {
+    ribbons.attr("fill-opacity", (r) =>
+      (r.source.index === d.index || r.target.index === d.index) ? 1 : 0.08
+    );
+  });
+
+  arcPaths.on("mouseout", function () {
+    ribbons.attr("fill-opacity", 0.9);
+  });
+
+  centerText.transition().duration(duration).style("opacity", 0);
+  return;
+}
 
   if (step === "sexist") {
     groups.on("mouseover", null);
