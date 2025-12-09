@@ -323,6 +323,28 @@ These numbers show that most online hate speech doesn't just go after one identi
 <p><u>The numbers say: The violence is real, measurable, and everywhere.</u></p>
 
   </Article>
+
+<!-- More Work Section -->
+<section class="more-work">
+  <h2>Explore More</h2>
+
+  <div class="work-grid">
+    <a href="https://shhorai.com" target="_blank" class="work-card">
+      <img src="./assets/shhor.png" alt="Shhor work" />
+      <p>More work from Shhor</p>
+    </a>
+
+    <a href="https://rawring-riha.github.io" target="_blank" class="work-card">
+      <img src="./assets/green-dino.jpg" alt="My work" />
+      <p>More of my work</p>
+    </a>
+  </div>
+</section>
+
+
+
+
+
 </div>
 
 <style>
@@ -430,6 +452,35 @@ article {
 .chart-caption.fadein {
   opacity: 1;
 }
+
+  .more-work {
+    margin: 4rem 0;
+    text-align: center;
+  }
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .work-card {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .work-card img {
+    width: 30%;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    transition: transform 0.2s ease;
+  }
+
+  .work-card:hover img {
+    transform: scale(1.03);
+  }
 
 
 </style>

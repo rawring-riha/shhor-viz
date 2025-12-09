@@ -207,8 +207,8 @@ export function renderChord(containerNode, labels, matrix, step = "grayscale") {
       const A = labels[i];
       const B = labels[j];
 
-      const pctAtoB = pctColMatrix?.[i]?.[j] ?? 0;
-      const pctBtoA = pctColMatrix?.[j]?.[i] ?? 0;
+      const pctAtoB = pctColMatrix?.[j]?.[i] ?? 0;
+      const pctBtoA = pctColMatrix?.[i]?.[j] ?? 0;
       const globalPct = pctGlobalMatrix?.[i]?.[j] ?? 0;
 
       return `
@@ -617,8 +617,14 @@ function drawStaticTooltips(svg, labels, color, step) {
     const { i, j } = p;
     const A = labels[i];
     const B = labels[j];
-    const pctAtoB = (pctColMatrix && pctColMatrix[i] && pctColMatrix[i][j]) ? pctColMatrix[i][j] : 0;
-    const pctBtoA = (pctColMatrix && pctColMatrix[j] && pctColMatrix[j][i]) ? pctColMatrix[j][i] : 0;
+    const pctAtoB = (pctColMatrix && pctColMatrix[j] && pctColMatrix[j][i])
+      ? pctColMatrix[j][i]    // swapped
+      : 0;
+
+    const pctBtoA = (pctColMatrix && pctColMatrix[i] && pctColMatrix[i][j])
+      ? pctColMatrix[i][j]    // swapped
+      : 0;
+
 
     const sx = Math.cos(p.angle - Math.PI / 2) * outerRadius;
     const sy = Math.sin(p.angle - Math.PI / 2) * outerRadius;
