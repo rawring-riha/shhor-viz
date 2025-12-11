@@ -161,7 +161,7 @@
   <div class="chart-caption" class:fadein={step === "end"}>
     <div class="caption-inner">
       <h3>There Is No Single-Issue Oppression</h3>
-      <p>By Harikrishnan P"</p>
+      <p>By Harikrishnan P</p>
       <p>Kimberlé Crenshaw coined the term <em>intersectionality</em> in 1989: systems of oppression interlock, creating unique experiences for people living at those junctures. 
         In India, where caste, religion, gender, class, and region layer over one another in complex patterns, intersectionality plays out in everyday experience. It’s a way of understanding how people navigate those tangled pressures.</p>
     </div>
