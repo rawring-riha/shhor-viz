@@ -1,0 +1,12 @@
+- name: Ping Supabase Storage
+  run: |
+    node -e "
+    import('./src/lib/supabaseConfig.js').then(({ SUPABASE_URL, SUPABASE_KEY }) => {
+      fetch(\`\${SUPABASE_URL}/storage/v1/bucket\`, {
+        headers: {
+          apikey: SUPABASE_KEY,
+          Authorization: \`Bearer \${SUPABASE_KEY}\`
+        }
+      }).then(r => console.log('Status:', r.status));
+    });
+    "
