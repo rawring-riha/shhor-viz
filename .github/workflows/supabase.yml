@@ -2,22 +2,25 @@ name: Keep Supabase Alive
 
 on:
   schedule:
-    - cron: '0 9 * * 1,4'   # Every Monday & Thursday at 9AM UTC
-  workflow_dispatch:          # Lets you trigger it manually too
+    - cron: '0 9 * * 1,2,3,4,5,6,7'
+  workflow_dispatch:
 
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
       - name: Ping Supabase Storage
-          run: |
-            node -e "
-            import('./src/lib/supabaseConfig.js').then(({ SUPABASE_URL, SUPABASE_KEY }) => {
-              fetch(\`\${SUPABASE_URL}/storage/v1/bucket\`, {
-                headers: {
-                  apikey: SUPABASE_KEY,
-                  Authorization: \`Bearer \${SUPABASE_KEY}\`
-                }
-              }).then(r => console.log('Status:', r.status));
-            });
-            "
+        run: |
+          node -e "
+          import('./src/lib/supabaseConfig.js').then(({ SUPABASE_URL, SUPABASE_KEY }) => {
+            fetch(\`\${SUPABASE_URL}/storage/v1/bucket\`, {
+              headers: {
+                apikey: SUPABASE_KEY,
+                Authorization: \`Bearer \${SUPABASE_KEY}\`
+              }
+            }).then(r => console.log('Status:', r.status));
+          });
+          "
