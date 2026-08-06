@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.47.0",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "svelte": "^5.43.8",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "wrangler": "^4.114.0"
   },
   "dependencies": {
     "d3": "^7.9.0"
